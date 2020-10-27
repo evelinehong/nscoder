@@ -1,0 +1,8 @@
+(** @canonical LogoLib.Colors *)
+module Colors = LogoLib__Colors
+
+(** @canonical LogoLib.LogoInterpreter *)
+module LogoInterpreter = LogoLib__LogoInterpreter
+
+(** @canonical LogoLib.VGWrapper *)
+module VGWrapper = LogoLib__VGWrapper

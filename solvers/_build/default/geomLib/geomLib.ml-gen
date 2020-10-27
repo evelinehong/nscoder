@@ -1,0 +1,29 @@
+(** @canonical GeomLib.Generator *)
+module Generator = GeomLib__Generator
+
+(** @canonical GeomLib.GeomLexer *)
+module GeomLexer = GeomLib__GeomLexer
+
+(** @canonical GeomLib.GeomParser *)
+module GeomParser = GeomLib__GeomParser
+
+(** @canonical GeomLib.Interpreter *)
+module Interpreter = GeomLib__Interpreter
+
+(** @canonical GeomLib.LambdaLexer *)
+module LambdaLexer = GeomLib__LambdaLexer
+
+(** @canonical GeomLib.LambdaParser *)
+module LambdaParser = GeomLib__LambdaParser
+
+(** @canonical GeomLib.Plotter *)
+module Plotter = GeomLib__Plotter
+
+(** @canonical GeomLib.Plumbing *)
+module Plumbing = GeomLib__Plumbing
+
+(** @canonical GeomLib.Renderer *)
+module Renderer = GeomLib__Renderer
+
+(** @canonical GeomLib.Utils2 *)
+module Utils2 = GeomLib__Utils2
