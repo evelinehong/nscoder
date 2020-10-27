@@ -15,6 +15,8 @@ def _desc(x): return x - 1
 
 def _gt(x): return lambda y: x > y
 
+def _positive(x): return x > 0
+
 class RecursionDepthExceeded(Exception):
     pass
 
@@ -62,7 +64,8 @@ def McCarthyPrimitives():
         Primitive("if", arrow(tbool, t0, t0, t0), _if),
         primitiveRecursion1,
         primitiveRecursion2,
-        Primitive("gt?", arrow(tint, tint, tbool), _gt),
+        # Primitive("gt?", arrow(tint, tint, tbool), _gt),
+        Primitive("positive?", arrow(tint, tbool), _positive),
         Primitive("incr", arrow(tint, tint), _succ),
         Primitive("decr", arrow(tint, tint), _desc)
     ] + [Primitive(str(j), tint, j) for j in range(2)]

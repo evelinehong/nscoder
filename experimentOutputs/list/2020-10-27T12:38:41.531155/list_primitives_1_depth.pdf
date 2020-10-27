@@ -1,0 +1,7 @@
+digraph {
+	graph [rankdir=RL]
+	subgraph cluster_1 {
+		graph [rank=same]
+		f0 [label=<f0=(λ (x y z) (fix2 x y (λ (u v <br /> w) (if (positive? w) (u <br /> (z v) (decr w)) v))))>]
+	}
+}
